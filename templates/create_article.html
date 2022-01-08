@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Add article
+{% endblock %}
+
+{% block body %}
+
+<div class="container mt-5">
+    <h2>Adding an article</h2>
+    <form method="post">
+        <input type="text" name="title" id="title" class="form-control"><br>
+        <textarea name="intro" id="intro" class="form-control"></textarea><br>
+        <textarea name="text" id="text" class="form-control"></textarea><br>
+        <input type="submit" class="btn btn-success" value="Add"><br>
+    </form>
+</div>
+
+{% endblock %}
